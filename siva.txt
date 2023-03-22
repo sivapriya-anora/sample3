@@ -12,3 +12,8 @@ models = ["Honda Civic","Honda Accord","Toyota Corolla","Toyota Camry","Ford Fus
 p = [i.split(" ")[1:] for i in models]
 g = functools.reduce(lambda a,b:a+b,p)
 print(g)
+
+
+
+
+# commit

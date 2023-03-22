@@ -1,4 +1,14 @@
-hi my name is siva priya
-anora
-company
-chennai
+# pseudocode for question 4:
+"""
+steps:
+1.First import the functools.
+2.Give the input list.
+3.Create the list comprehension and give for loop and condition inside that list comprehension.
+4.Create the variable for reduce function and inside that I used lambda function to initialize the variable and we can give the expression.
+5.Atlast print the result.
+"""
+import functools
+models = ["Honda Civic","Honda Accord","Toyota Corolla","Toyota Camry","Ford Fusion","Ford Escape","Nissan Sentra","Hyundai Elantra"]
+p = [i.split(" ")[1:] for i in models]
+g = functools.reduce(lambda a,b:a+b,p)
+print(g)
